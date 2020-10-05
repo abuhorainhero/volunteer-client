@@ -1,0 +1,9 @@
+.addFormStyle {
+    border: 1px solid lightGray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px lightGray;
+}
+.addFormStyle input {
+    margin-bottom: 20px;
+}

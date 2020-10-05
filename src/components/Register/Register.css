@@ -1,0 +1,12 @@
+.formStyle {
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    width: 570px;
+}
+.formStyle input {
+    border: none;
+     border-bottom: 1px solid lightGray;
+     margin-bottom: 30px;
+}

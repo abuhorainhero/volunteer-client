@@ -22,7 +22,7 @@ const App = () => {
   const [volunteerInfo, setVolunteerInfo] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/volunteerInfo')
+    fetch('https://peaceful-beach-73677.herokuapp.com/volunteerInfo')
       .then(res => res.json())
       .then(data => setVolunteerInfo(data))
   }, [])

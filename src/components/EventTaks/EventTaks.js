@@ -8,7 +8,7 @@ const EventTaks = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/volunteerEvents?email='+loggedInUser.email)
+        fetch('https://peaceful-beach-73677.herokuapp.com/volunteerEvents?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => {
                 setEvents(data)

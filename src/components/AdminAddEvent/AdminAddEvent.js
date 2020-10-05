@@ -24,7 +24,7 @@ const AdminAddEvent = () => {
 
         const newEvent = {title: title, description, date:date}
 
-        fetch('http://localhost:5000/addVolunteerInfo', {
+        fetch('https://peaceful-beach-73677.herokuapp.com/addVolunteerInfo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newEvent)
@@ -58,6 +58,10 @@ const AdminAddEvent = () => {
 
                             <label htmlFor="Date">Event Date</label>
                             <input type="date" name="" id="date" className="form-control" />
+
+                            <label htmlFor="file">Image File</label>
+                            <input type="file" name="" id="file" className="form-control" />
+
 
                             <input type="submit" value="Submit"/>
                         </form>

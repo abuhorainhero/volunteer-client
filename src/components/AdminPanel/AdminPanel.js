@@ -11,7 +11,7 @@ const AdminPanel = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminPanel')
+        fetch('https://peaceful-beach-73677.herokuapp.com/adminPanel')
             .then(res => res.json())
             .then(data => {
                 setVolRegister(data);
@@ -23,7 +23,7 @@ const AdminPanel = () => {
     }
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/deleteRegister/${id}`, {
+        fetch(`https://peaceful-beach-73677.herokuapp.com/deleteRegister/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

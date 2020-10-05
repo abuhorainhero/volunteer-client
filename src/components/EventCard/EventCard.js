@@ -5,7 +5,7 @@ const EventCard = (props) => {
     const {_id, title, date } = props.eventInfo;
 
     const handleCancel = (id) => {
-        fetch(`http://localhost:5000/deleteRegister/${id}`, {
+        fetch(`https://peaceful-beach-73677.herokuapp.com/deleteRegister/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

@@ -28,7 +28,7 @@ const Register = () => {
         const newUserInfo = { ...loggedInUser, ...selected };
         console.log(newUserInfo)
 
-        fetch('http://localhost:5000/addVolunteerUser', {
+        fetch('https://peaceful-beach-73677.herokuapp.com/addVolunteerUser', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newUserInfo)

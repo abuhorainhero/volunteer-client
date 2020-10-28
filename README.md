@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
-=> There are so many volunteer categories that any volunteer can come here and do a registration.
-=> A volunteer will be able to see and remove how many registrations he has made.
-=> If the admin wants, he can add service and remove any volunteer.
+* There are so many volunteer categories that any volunteer can come here and do a registration.
+* A volunteer will be able to see and remove how many registrations he has made.
+* If the admin wants, he can add service and remove any volunteer.
 
 ## Available Scripts
 

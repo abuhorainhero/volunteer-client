@@ -32,4 +32,3 @@ A single page Application with dashboard where are any volunteer can pick the da
     <li>Firebase</li>
     <li>Heroku</li>
 </ul>
->>>>>>> 35412241c73a621707d021b29f98758a52751718

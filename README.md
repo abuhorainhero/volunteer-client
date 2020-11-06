@@ -1,6 +1,6 @@
-<img src="./src/logos/Group 1329.png"/>
+< <img src="./src/logos/Group 1329.png"/>
 Volunteer Network
-=======
+======= 
 
 A single page Application with dashboard where are any volunteer can pick the date and fix an voluntary service registration. Volunteer group admin, who any can cancel a volunteer.
 * There are so many volunteer categories that any volunteer can come here and do a registration.

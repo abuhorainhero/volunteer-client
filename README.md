@@ -1,5 +1,4 @@
-
-<<<<<<< HEAD <img src="./src/logos/Group 1329.png"/>
+<img src="./src/logos/Group 1329.png"/>
 Volunteer Network
 =======
 

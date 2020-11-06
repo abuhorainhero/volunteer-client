@@ -3,7 +3,9 @@ A single page Application with dashboard where are any volunteer can pick the da
 <a href="http://">Live Site</a> | <a href="http://">Live API Server</a> 
 
 
-
+There are so many volunteer categories that any volunteer can come here and do a registration.
+A volunteer will be able to see and remove how many registrations he has made.
+If the admin wants, he can add service and remove any volunteer.
 
 
 

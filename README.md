@@ -7,8 +7,8 @@ A single page Application with dashboard where are any volunteer can pick the da
 * A volunteer will be able to see and remove how many registrations he has made.
 * If the admin wants, he can add service and remove any volunteer.
 <br/>
-<a href="https://volunteer-assig.firebaseapp.com/">Live Site</a> | 
-<a href="https://peaceful-beach-73677.herokuapp.com/">Live API Server</a> 
+<a target="_blank" href="https://volunteer-assig.firebaseapp.com/">Live Site</a> | 
+<a target="_blank" href="https://peaceful-beach-73677.herokuapp.com/">Live API Server</a> 
 
 ## Front End Technology
 <ul>
@@ -24,7 +24,7 @@ A single page Application with dashboard where are any volunteer can pick the da
     <li>Firebase Authentication</li>
 </ul>
 <br/>
-<a href="https://github.com/abuhorainhero/volunteer-server">Backend Repository</a>
+<a target="_blank" href="https://github.com/abuhorainhero/volunteer-server">Backend Repository</a>
 
 ## Hosting Technology
 <ul>

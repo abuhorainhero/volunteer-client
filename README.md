@@ -1,13 +1,35 @@
 
 <<<<<<< HEAD <img src="./src/logos/Group 1329.png"/>
+Volunteer Network
 =======
-## Description
-A single page Application with dashboard where are any volunteer can pick the date and fix an voluntary service registration. Volunteer group admin, who any can cancel a volunteer.
-<a href="http://">Live Site</a> | <a href="http://">Live API Server</a> 
 
+A single page Application with dashboard where are any volunteer can pick the date and fix an voluntary service registration. Volunteer group admin, who any can cancel a volunteer.
 * There are so many volunteer categories that any volunteer can come here and do a registration.
 * A volunteer will be able to see and remove how many registrations he has made.
 * If the admin wants, he can add service and remove any volunteer.
+<br/>
+<a href="https://volunteer-assig.firebaseapp.com/">Live Site</a> | 
+<a href="https://peaceful-beach-73677.herokuapp.com/">Live API Server</a> 
 
+## Front End Technology
+<ul>
+    <li>React.js</li>
+    <li>Bootstrap4</li>
+    <li>CSS | CSS3</li>
+</ul>
+## Backend Technology
+<ul>
+    <li>Node.js</li>
+    <li>Express.js</li>
+    <li>MongoDB</li>
+    <li>Firebase Authentication</li>
+</ul>
+<br/>
+<a href="https://github.com/abuhorainhero/volunteer-server">Backend Repository</a>
 
+## Hosting Technology
+<ul>
+    <li>Firebase</li>
+    <li>Heroku</li>
+</ul>
 >>>>>>> 35412241c73a621707d021b29f98758a52751718

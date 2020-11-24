@@ -21,7 +21,7 @@ const EventCard = (props) => {
                 <h4>{title}</h4>
                 <h6>{date}</h6>
             </div>
-            <button onClick={() => handleCancel(_id)} className='btn btn-default'>Cancel</button>
+            <button onClick={() => handleCancel(_id)} className='btn btn-danger'>Cancel</button>
 
         </div>
     );

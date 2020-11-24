@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import logoHeader from '../../logos/Group 1329.png';
 import { handleAddEvent } from '../AdminPanel/AdminPanel';
 import './AdminAddEvent.css';
 
 const AdminAddEvent = () => {
+    const [file, setFile] = useState(null)
     const history = useHistory();
 
     const handleRegisterList = () => {
         history.push('/admin')
     }
-
     const handleAddEvent = () => {
         history.push('/adminAddEvent');
+    }
+
+    const handleFileChange = (e) => {
+        const newFile = e.target.files[0]
+        setFile(newFile);
     }
 
     const handleAddEventSubmit = (e) => {
@@ -22,12 +27,13 @@ const AdminAddEvent = () => {
         const description = document.getElementById('description').value;
         const date = document.getElementById('date').value;
 
-        const newEvent = {title: title, description, date:date}
+        const newEvent = {title: title, description, date:date, image: file}
 
         fetch('https://peaceful-beach-73677.herokuapp.com/addVolunteerInfo', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newEvent)
+            // headers: { 'Content-Type': 'application/json' },
+            // body: JSON.stringify(newEvent)
+            body:newEvent
         })
 
     }
@@ -60,10 +66,10 @@ const AdminAddEvent = () => {
                             <input type="date" name="" id="date" className="form-control" />
 
                             <label htmlFor="file">Image File</label>
-                            <input type="file" name="" id="file" className="form-control" />
+                            <input type="file" onChange={handleFileChange} name="file" id="file" className="form-control" required/>
 
 
-                            <input type="submit" value="Submit"/>
+                            <input className="btn btn-success w-25" type="submit" value="Submit"/>
                         </form>
                     </div>
 

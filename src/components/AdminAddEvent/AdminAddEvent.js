@@ -5,7 +5,7 @@ import { handleAddEvent } from '../AdminPanel/AdminPanel';
 import './AdminAddEvent.css';
 
 const AdminAddEvent = () => {
-    const [file, setFile] = useState(null)
+    // const [file, setFile] = useState(null)
     const history = useHistory();
 
     const handleRegisterList = () => {
@@ -15,10 +15,10 @@ const AdminAddEvent = () => {
         history.push('/adminAddEvent');
     }
 
-    const handleFileChange = (e) => {
-        const newFile = e.target.files[0]
-        setFile(newFile);
-    }
+    // const handleFileChange = (e) => {
+    //     const newFile = e.target.files[0]
+    //     setFile(newFile);
+    // }
 
     const handleAddEventSubmit = (e) => {
         e.preventDefault();
@@ -26,16 +26,24 @@ const AdminAddEvent = () => {
         const title = document.getElementById('titleName').value;
         const description = document.getElementById('description').value;
         const date = document.getElementById('date').value;
+        const image = document.getElementById('image').value;
 
-        const newEvent = {title: title, description, date:date, image: file}
-
+        const newEvent = {title: title, description, date:date, image: image}
+console.log(newEvent)
         fetch('https://peaceful-beach-73677.herokuapp.com/addVolunteerInfo', {
             method: 'POST',
-            // headers: { 'Content-Type': 'application/json' },
-            // body: JSON.stringify(newEvent)
-            body:newEvent
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newEvent)
         })
-
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            alert("Successfully")
+        })
+        .catch(error => {
+            console.error(error)
+            alert(error.message)
+        })
     }
 
     return (
@@ -65,8 +73,8 @@ const AdminAddEvent = () => {
                             <label htmlFor="Date">Event Date</label>
                             <input type="date" name="" id="date" className="form-control" />
 
-                            <label htmlFor="file">Image File</label>
-                            <input type="file" onChange={handleFileChange} name="file" id="file" className="form-control" required/>
+                            <label htmlFor="file">Image Link</label>
+                            <input type="text" name="file" id="image" className="form-control" placeholder="Your image Link" required/>
 
 
                             <input className="btn btn-success w-25" type="submit" value="Submit"/>

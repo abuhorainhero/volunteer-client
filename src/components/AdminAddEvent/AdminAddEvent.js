@@ -37,8 +37,9 @@ console.log(newEvent)
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             alert("Successfully")
+            history.push('/adminAddEvent');
         })
         .catch(error => {
             console.error(error)
